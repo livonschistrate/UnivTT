@@ -1,0 +1,1407 @@
+@import "coreui/coreui-custom.css";
+/*
+    Setari css specifice aplicatiei
+    Suprascrierea unor setari de la bibliotecile folosite
+ */
+
+body{
+    overflow-y: scroll;
+}
+.btn{
+    font-size: var(--univtt-button-font-size);
+    padding: 0.175rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.btn-primary{
+    --cui-btn-bg: #1f54db;
+    --cui-btn-border-color: #1f54db;
+    --cui-btn-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-hover-bg: #0b3bb6;
+    --cui-btn-hover-border-color: #0733a1;
+    --cui-btn-hover-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-active-bg: #1f54db;
+    --cui-btn-active-border-color: #1f54db;
+    --cui-btn-active-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-disabled-bg: #1f54db;
+    --cui-btn-disabled-border-color: #1f54db;
+    --cui-btn-disabled-color: rgba(255, 255, 255, 0.87);
+    --cui-btn-shadow: rgba(31, 91, 219, 0.5);
+}
+
+.btn-close-white1 {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: var(--cui-btn-close-color, rgba(255,255,255, 0.95));
+    background: transparent var(--cui-btn-close-bg, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba%28255, 255, 255, 0.95%29'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")) center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: 0.5;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: var(--cui-pagination-active-color, rgba(255, 255, 255, 0.87));
+    background-color: var(--cui-pagination-active-bg, #321fdb);
+    border-color: var(--cui-pagination-active-border-color, #321fdb);
+}
+
+@media (min-width: 1800px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1620px;
+    }
+}
+
+.univtt-orare-container{
+    width: 100%;
+    max-width: 100%;
+}
+
+.text-left{
+    text-align: left !important;
+}
+.fa-15xl {
+    font-size: 1.4em;
+    line-height: .03125em;
+    vertical-align: -0.1575em;
+}
+.fa-b {
+    margin-right: 0.6em;
+}
+
+th{
+    font-weight: 500;
+    font-size: 0.96em;
+}
+.pagination-sm .page-link {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+}
+.sel2-pagination + .select2-container  {
+    width: 5em !important;
+}
+.sel2-pagination + .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 0.96em;
+}
+.sel2-restrictii + .select2-container  {
+    width: 9em !important;
+}
+
+.login-background {
+    background-image: url("../images/back1.jpg");
+}
+#login_form{
+    box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.toast{
+    width:39em;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 12px 2px rgba(0,0,0,30%);
+}
+.header{
+    background-color: #f0f0f0;
+    z-index: 1034 !important;
+}
+.header.header-sticky {
+    box-shadow: 7px 0 7px 2px rgb(0 0 0 / 20%);
+}
+.sidebar.sidebar-fixed {
+    box-shadow: 0 0 6px 4px rgb(0 0 0 / 20%);
+}
+.top-label{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.dropdown-menu{
+    box-shadow: 1px 1px 10px 4px rgba(0,0,0,0.2);
+}
+.top-icon{
+    font-size: 1.3em;
+    color:rgba(44, 56, 74, 0.55);
+}
+.top-icon:hover{
+    color:rgba(44, 56, 74, 0.95);
+}
+.top-0-univtt{
+    top: -0.3em !important;
+}
+.end-0-univtt{
+    right: -0.6em !important;
+}
+
+.public-link {
+    color: #fff;
+    text-decoration: none;
+}
+.public-link:hover{
+    color: #e7efff;
+    text-decoration: underline  ;
+}
+
+#main_link{
+    cursor: pointer;
+}
+
+#div_profil{
+    box-shadow: 1px 1px 12px 2px rgba(0,0,0,30%);
+    min-width: 30em;
+}
+
+input.no-grey{
+    background-color: #fff !important;
+}
+
+.anchor {
+    cursor: pointer;
+}
+.anchor:hover {
+    text-decoration: underline;
+    color: #1f1498;
+}
+
+/*@media (min-width: 768px) {*/
+/*    .univtt-container{*/
+/*        width: 100% !important;*/
+/*        max-width: 2000px !important;*/
+/*    }*/
+/*}*/
+
+.wrapper{
+    width:100%;
+    will-change:auto;
+    transition:padding .15s
+}
+html:not([dir=rtl]) .wrapper{
+    padding-left:var(--cui-sidebar-occupy-start,0)
+}
+*[dir=rtl] .wrapper{
+    padding-right:var(--cui-sidebar-occupy-start,0)
+}
+.sidebar-title-icon{
+    margin-left: -0.9em;
+    margin-right: 0.9em;
+    position: relative;
+}
+.sidebar-nav .nav-link {
+ padding: 0.8rem 0.5rem;
+}
+.menu-icon{
+    /*margin-right: 1.1em;*/
+    margin: auto;
+    font-size: 1.3em;
+}
+.menu-title{
+    margin-left: 0.6em;
+    margin-top: -0.3em;
+}
+.menu-entry{
+    text-align: center;
+    width: 1.9em;
+}
+.edit-icon, .serie-icon{
+    cursor: pointer;
+}
+.edit-icon:hover, .serie-icon:hover{
+    color: var(--cui-blue, inherit);
+}
+.nav-link{
+    outline: none;
+}
+
+.f5{
+    font-weight: 500;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dashboard-stats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em 2em;
+}
+.dashboard-stats > div.card{
+    min-width:10em;
+    margin:0.1em;
+}
+
+.card{
+    box-shadow: 0 0 6px 1px rgba(0,0,0,20%);
+}
+.card-loader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header{
+    background-color: rgba(0,0,20,0.125);
+    border:solid 1px rgba(0,0,20,0.1);
+}
+.card-header.card-loader{
+    min-height:3.2em;
+}
+.card-body{
+    border:solid 1px rgba(0,0,20,0.2);
+    border-top: none;
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#facs_loader, #corpuri_loader, #ani_loader{
+    display: inline-block;
+    align-self: flex-end;
+}
+#facs_table, #corpuri_table, #ani_table {
+    padding: 0;
+}
+.table-facs {
+    box-shadow: none !important;
+    margin-bottom: 0;
+}
+table.table-univtt.table-facs thead tr th {
+    border-top: none;
+}
+table.table-univtt.table-facs tr th:nth-child(1),
+table.table-univtt.table-facs tr td:nth-child(1) {
+    border-left: none;
+}
+table.table-univtt.table-facs tr th:nth-last-child(1),
+table.table-univtt.table-facs tr td:nth-last-child(1) {
+    border-right: none;
+}
+table.table-univtt.table-facs tr:nth-last-child(1) td {
+    border-bottom:none;
+}
+table.table-univtt.table-facs tr td:nth-child(2) {
+    text-align: left;
+}
+.edit-fac, .edit-corp, .edit-serie, .edit-asignare{
+    color: #1f54db;
+    text-decoration: none;
+    cursor: pointer;
+}
+.edit-fac:hover, .edit-corp:hover, .edit-serie:hover, .edit-asignare:hover{
+    color: #0733a1;
+    text-decoration: underline;
+}
+/* select 2 single customization */
+
+.select2-container--default .select2-selection--single {
+    border-radius: 0.2rem;
+    border: 1px solid var(--cui-pagination-border-color, #c4c9d0);
+}
+.select2-container .select2-selection--single{
+    height: unset;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 1.95em;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 1.95em;
+}
+.form-switch .form-check-input:focus {
+    background-image: var(--cui-form-switch-focus-bg-image, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23BACFFF'/%3e%3c/svg%3e"));
+}
+.select2-results{
+    font-size: 0.96em;
+    box-shadow: 0 0 6px 1px rgb(0 0 0 / 20%);
+}
+.select2-results__option {
+    padding: 3px;
+}
+.select2-results ul li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: rgb(206, 206, 206) !important;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #1f54db !important;
+}
+.select2:focus, .selection:focus, .select2-selection:focus {
+    /*box-shadow: 0 0 0.3rem 0.15rem #0a4eb640;*/
+    box-shadow: 0 0 0.3rem 0.15rem #0a4eb640;
+    outline: none !important;
+}
+.select2, .selection, .select2-selection {
+    outline: none !important;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
+    box-shadow: 0 0 0.3rem 0.15rem #0a4eb640;
+    outline: none !important;
+    border:none;
+}
+/* end select 2 single customization */
+
+.form-control{
+    font-size: 0.96em;
+    padding: 0.2rem 0.4rem;
+    font-weight: 500;
+}
+.form-control:focus {
+    box-shadow: 0 0 0.3rem 0.15rem #0a4eb640;
+}
+.lbl-editing {
+    color: rgba(0,0,0,75%);
+    margin-top: 0.5em;
+}
+
+table.table-univtt thead tr th {
+    background-color: #CFCFCF;
+    color: #282828;
+    text-align: center;
+    position: relative;
+    cursor: default;
+}
+table.table-univtt{
+    box-shadow: 0 0 6px 1px rgba(0,0,0,20%);
+}
+table.table-univtt tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+table.table-univtt tr:hover {
+    background-color: #c4e5ff;
+}
+table.table-univtt thead tr {
+    vertical-align: middle;
+}
+table.table-univtt thead tr th {
+    border-left: solid 1px #aaaaaa;
+    border-bottom: solid 1px #b1b1b1;
+    border-top: solid 1px #b1b1b1;
+}
+table.table-univtt thead tr th:nth-child(1) {
+    border-left: solid 1px #b1b1b1;
+}
+table.table-univtt thead tr th:nth-last-child(1) {
+    border-right: solid 1px #b1b1b1;
+}
+
+table.table-univtt tr {
+    vertical-align: middle;
+}
+table.table-univtt tr td {
+    border-right: solid 1px #d8dbe0;
+    border-bottom: none;
+    cursor: default;
+}
+table.table-univtt tr td:nth-child(1) {
+    border-left: solid 1px #b1b1b1;
+}
+table.table-univtt tr td:nth-last-child(1) {
+    border-right: solid 1px #b1b1b1;
+}
+table.table-univtt tr:nth-last-child(1) td {
+    border-bottom: solid 1px #b1b1b1;
+}
+
+table.table-univtt thead tr th.sortable, table.table-univtt thead tr th.sortable-facs, table.table-univtt thead tr th.sortable-corpuri, table.table-univtt thead tr th.sortable-ani {
+    cursor: pointer;
+}
+.column-arrow{
+    position: absolute;
+    right: 0.2em;
+    top: -0.4em;
+    vertical-align: middle;
+}
+.filter-text{
+    max-width: 8em;
+}
+.popover{
+    box-shadow: 0 0 6px 1px rgba(0,0,0,30%);
+    padding: 0.6em;
+    font-size: 0.74rem;
+}
+.popover-body{
+    margin:0;
+    padding:0;
+}
+div.univtt-pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 4px;
+    font-size: 0.94em;
+}
+#ulPage{
+    margin: 0;
+}
+#div_nr_rec{
+    flex-grow: 4;
+}
+#div_filters, #div_filters_spec, #div_filters_sala{
+    margin-bottom: 1em;
+    display: none;
+    border-top: solid 1px var(--cui-pagination-border-color, #c4c9d0);
+    border-bottom: solid 1px var(--cui-pagination-border-color, #c4c9d0);
+}
+#div_filters_spec, #div_filters_sala {
+    border-top: none;
+}
+.div_filters_inner, .div_filters_inner_spec, .div_filters_inner_disc, .div_filters_inner_sala{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5em 0.3em;
+    font-size:0.96em;
+    line-height: 2.1em;
+}
+.div_filters_inner_disc {
+    margin-top: 0;
+    padding-top: 0;
+}
+.div_filters_inner_disc div{
+    padding-right: 0.7em;
+}
+.div_filters_inner_spec, .div_filters_inner_sala {
+    padding-top: 0;
+}
+.filters-inner{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.form-floating > .form-control {
+    padding: 0.5rem 0.75rem;
+}
+.form-floating > .form-control, .form-floating > .form-select {
+    height: calc(2.5rem + 2px);
+    line-height: 1.25;
+}
+.form-control {
+    font-size: 0.96em;
+    padding: 0.2rem 0.4rem;
+}
+.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+.form-floating > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+#div_confirm_delete {
+    z-index: 1100;
+}
+.div-confirm-message{
+    padding: 2em;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-check-input {
+     height: 1.4em;
+}
+.form-switch .form-check-input {
+    width: 2.8em;
+}
+.form-check-input:focus {
+    border-color: #bacfff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(47, 125, 231, 0.25);
+}
+.univtt-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.refresh-button{
+    padding: 0.4em;
+    color: rgba(44, 56, 74, 0.55);
+    font-size: 1.2em;
+}
+.refresh-button:hover{
+    color: rgba(0, 0, 0, 0.78);
+    font-size: 1.2em;
+}
+.row-div-edit > div:nth-child(1) {
+    padding-right:0.2em;
+}
+.row-div-edit > div:nth-child(1) > label{
+    padding-left:1.75em;
+}
+
+.row-div-edit > div:not(:first-child):not(:last-child) {
+    padding-left:0.2em;
+    padding-right:0.2em;
+}
+.row-div-edit > div:nth-last-child(1) {
+    padding-left:0.2em;
+}
+
+.spec-facultate-dropdown{
+    z-index: 1100;
+    font-size: 1.05em;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,30%);
+}
+.sel2-specs-facultate + .select2-container .select2-selection--single,
+.sel2-specs-ciclu-studii + .select2-container .select2-selection--single,
+.sel2-specs-forma + .select2-container .select2-selection--single,
+.sel2-specs-durata + .select2-container .select2-selection--single,
+.sel2-disc-an-studiu + .select2-container .select2-selection--single,
+.sel2-disc-semestru + .select2-container .select2-selection--single,
+.sel2-disc-curs + .select2-container .select2-selection--single,
+.sel2-disc-seminar + .select2-container .select2-selection--single,
+.sel2-disc-laborator + .select2-container .select2-selection--single,
+.sel2-disc-proiect + .select2-container .select2-selection--single,
+.sel2-disc-verificare + .select2-container .select2-selection--single,
+.sel2-disc-credite + .select2-container .select2-selection--single,
+.sel2-disc-tip + .select2-container .select2-selection--single,
+.sel2-prof-grad + .select2-container .select2-selection--single,
+.sel2-prof-titlu + .select2-container .select2-selection--single,
+.sel2-sali-corp + .select2-container .select2-selection--single,
+.sel2-sali-tip + .select2-container .select2-selection--single,
+.sel2-edit + .select2-container .select2-selection--single
+{
+    border: solid 1px  var(--cui-input-border-color, #b1b7c1);
+}
+.sel2-specs-facultate + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-specs-ciclu-studii + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-specs-forma + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-specs-durata + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-an-studiu + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-semestru + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-curs + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-seminar + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-laborator + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-proiect + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-verificare + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-credite + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-disc-tip + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-prof-grad + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-prof-titlu + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-sali-corp + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-sali-tip + .select2-container--default .select2-selection--single .select2-selection__arrow,
+.sel2-edit + .select2-container--default .select2-selection--single .select2-selection__arrow
+{
+    top:1.3em;
+}
+.sel2-specs-facultate + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-specs-ciclu-studii + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-specs-forma + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-specs-durata + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-an-studiu + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-semestru + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-curs + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-seminar + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-laborator + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-proiect + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-verificare + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-credite + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-disc-tip + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-prof-grad + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-prof-titlu + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-sali-corp + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-sali-tip + .select2-container--default .select2-selection--single .select2-selection__rendered,
+.sel2-edit + .select2-container--default .select2-selection--single .select2-selection__rendered
+{
+    line-height: 1.5em;
+    margin-left: 0.4em;
+    padding-bottom: 0.1em;
+    font-size: 0.94em;
+}
+
+.sel2-specs-facultate + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-specs-ciclu-studii + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-specs-forma + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-specs-durata + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-an-studiu + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-semestru + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-curs + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-seminar + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-laborator + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-proiect + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-proiect + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-verificare + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-credite + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-disc-tip + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-prof-grad + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-prof-titlu + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-sali-corp + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-sali-tip + .select2-container--default .select2-selection--single .select2-selection__rendered::before,
+.sel2-edit + .select2-container--default .select2-selection--single .select2-selection__rendered::before
+{
+    display: block;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #b1b7c1;
+}
+.sel2-specs-facultate + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Facultate';
+}
+
+.sel2-disc-an-studiu + .select2-container,
+.sel2-disc-semestru + .select2-container,
+.sel2-disc-curs + .select2-container,
+.sel2-disc-seminar + .select2-container,
+.sel2-disc-laborator + .select2-container,
+.sel2-disc-proiect + .select2-container,
+.sel2-disc-verificare + .select2-container,
+.sel2-disc-credite + .select2-container,
+.sel2-disc-tip + .select2-container,
+.sel2-specs-facultate + .select2-container,
+.sel2-specs-ciclu-studii + .select2-container,
+.sel2-specs-forma + .select2-container,
+.sel2-specs-durata + .select2-container,
+.sel2-prof-grad + .select2-container,
+.sel2-prof-titlu + .select2-container,
+.sel2-sali-corp + .select2-container,
+.sel2-sali-tip + .select2-container,
+.sel2-edit + .select2-container
+{
+    min-width:5em;
+    width:100% !important;
+    font-weight: 500;
+}
+.sel2-specs-ciclu-studii + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Ciclu de studii';
+}
+.sel2-specs-forma + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Forma de învățământ';
+}
+.sel2-specs-durata + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Durata studiilor (ani)';
+}
+
+#select2-disc_edit_curs-results,
+#select2-disc_edit_seminar-results,
+#select2-disc_edit_laborator-results,
+#select2-disc_edit_proiect-results,
+#select2-disc_edit_verificare-results,
+#select2-disc_edit_credite-results,
+select2-disc_edit_tip-results,
+#select2-sali_edit_corp-results,
+#select2-sali_edit_tip-results
+{
+    max-height: unset;
+}
+.sel2-disc-an-studiu + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'An de studiu';
+}
+.sel2-disc-semestru + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Semestru';
+}
+.sel2-disc-curs + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'C = Nr. ore de curs';
+}
+.sel2-disc-seminar + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'S = Nr. ore de seminar';
+}
+.sel2-disc-laborator + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'L = Nr. ore de laborator';
+}
+.sel2-disc-proiect + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'P = Nr. ore de proiect';
+}
+.sel2-disc-verificare + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Tipul de verificare';
+}
+.sel2-disc-credite + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Nr. de credite ECTS';
+}
+.sel2-disc-tip + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Pachet opțional';
+}
+.sel2-prof-grad + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Grad didactic';
+}
+.sel2-prof-titlu + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Titlu';
+}
+.sel2-sali-corp + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Corp de clădire';
+}
+.sel2-sali-tip + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Tip sală';
+}
+.sel2-grupa-serie + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Serie de predare';
+}
+.sel2-grupa-tip + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Tip grupă';
+}
+.sel2-grupa-semestru + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Semestru';
+}
+.sel2-grupa-grup-optionale + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Grup discipline opționale';
+}
+.sel2-asignare-prof + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Cadru didactic';
+}
+.sel2-asignare-ore + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Nr. ore';
+}
+.sel2-orar-sala + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Sala';
+}
+.sel2-orar-asignare + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Disciplina / Cadru didactic';
+}
+.sel2-orar-par-impar + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Săptămâni pare / impare';
+}
+.sel2-rang + .select2-container--default .select2-selection--single .select2-selection__rendered::before {
+    content: 'Rang utilizator';
+}
+.sel2-orar-grupe + .select2-container--default .select2-selection--multiple .select2-selection__rendered::before {
+    content: 'Grupe';
+    display: block;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #b1b7c1;
+    padding-left: 1em;
+}
+.locked-tag .select2-selection__choice__remove{
+    display: none! important;
+}
+.hidden {
+    display:none;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 1px solid #c0c0c0;
+    min-height: 53px;
+}
+
+/* option-group */
+.select2-container--default .select2-results__option--group
+{
+    background-color: white !important;
+    border-top: solid 1px #c0c0c0;
+}
+.select2-container--default .select2-results__option--group strong{
+    border-bottom: solid 1px #d9d9d9;
+}
+.select2-container--default .select2-results__option--group ul li:nth-child(even) {
+    background-color: #fff;
+}
+.select2-container--default .select2-results__option--group ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+.univtt-disc-table tr th, .univtt-disc-table tr td,
+.univtt-spec-table tr th, .univtt-spec-table tr td{
+    text-align: center;
+}
+.univtt-disc-table tr td:nth-child(2),
+.univtt-spec-table tr td:nth-child(2),
+.univtt-spec-table tr td:nth-child(9){
+    text-align: left;
+}
+.univtt-disc-table tr:not(:hover) td:nth-child(7),
+.univtt-disc-table tr:not(:hover) td:nth-child(8){
+    background-color: rgba(198, 255, 198, 0.86);
+}
+.univtt-disc-table tr:not(:hover):nth-child(even) td:nth-child(7),
+.univtt-disc-table tr:not(:hover):nth-child(even) td:nth-child(8){
+    background-color: rgba(191, 245, 191, 0.86);
+}
+
+.univtt-disc-table tr:not(:hover) td:nth-child(9),
+.univtt-disc-table tr:not(:hover) td:nth-child(10),
+.univtt-disc-table tr:not(:hover) td:nth-child(11),
+.univtt-disc-table tr:not(:hover) td:nth-child(12){
+    background-color: lightgoldenrodyellow;
+}
+.univtt-disc-table tr:not(:hover):nth-child(even) td:nth-child(9),
+.univtt-disc-table tr:not(:hover):nth-child(even) td:nth-child(10),
+.univtt-disc-table tr:not(:hover):nth-child(even) td:nth-child(11),
+.univtt-disc-table tr:not(:hover):nth-child(even) td:nth-child(12){
+    background-color: #ececc8;
+}
+.univtt-disc-table tr td:nth-child(9):not(:empty):after {
+    /*color: #a0a0a0;*/
+    content: 'C';
+}
+.univtt-disc-table tr td:nth-child(9):empty:after {
+    /*color: #a0a0a0;*/
+    content: '-';
+}
+.univtt-disc-table tr td:nth-child(10):not(:empty):after{
+    /*color: #a0a0a0;*/
+    content: 'S';
+}
+.univtt-disc-table tr td:nth-child(10):empty:after {
+    /*color: #a0a0a0;*/
+    content: '-';
+}
+.univtt-disc-table tr td:nth-child(11):not(:empty):after {
+    /*color: #a0a0a0;*/
+    content: 'L';
+}
+.univtt-disc-table tr td:nth-child(11):empty:after {
+    /*color: #a0a0a0;*/
+    content: '-';
+}
+.univtt-disc-table tr td:nth-child(12):not(:empty):after {
+    /*color: #a0a0a0;*/
+    content: 'P';
+}.univtt-disc-table tr td:nth-child(12):empty:after {
+     /*color: #a0a0a0;*/
+     content: '-';
+ }
+
+.univtt-asignari-table tr th, .univtt-asignari-table tr td,
+.univtt-asignari-table tr th, .univtt-asignari-table tr td
+{
+    text-align: center;
+    border-bottom: solid 1px #d0d0d0 !important;
+}
+
+
+.univtt-asignari-table tbody:hover td[rowspan],
+.univtt-asignari-table tr:hover {
+    background-color: #c4e5ff;
+}
+
+.disc-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.pachet{
+    font-size:0.9em;
+    color: #676767;
+}
+
+.day{
+    display: flex;
+    border:solid 1px #909090;
+    padding: 0;
+}
+.day-label {
+    /*writing-mode: vertical-lr;*/
+    /*text-orientation: upright;*/
+    /*text-transform: uppercase;*/
+    vertical-align: middle;
+    text-align: center;
+    min-width: 3em;
+    line-height: 4em;
+    font-weight: 500;
+    font-size: 1.16em;
+    border-right: solid 1px #909090;
+    color: #fff;
+    background-color: #ff9250;
+}
+.day-slot{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.day-slot-label{
+    border-bottom:solid 1px #909090;
+    border-right:solid 1px #909090;
+    padding: 0.2em;
+    font-size: 0.92em;
+    flex: auto;
+    text-align: center;
+    min-width:10em;
+}
+.slot{
+    min-width: 10em;
+    border-bottom:solid 1px #909090;
+    border-right:solid 1px #909090;
+    font-size: 0.92em;
+    padding: 0.2em;
+}
+
+.restrictii-table {
+    border-collapse: collapse;
+    text-align: center;
+}
+.restrictii-table tr td {
+    border:solid 1px #a0a0a0;
+    padding: 0.3em;
+}
+
+.restrictii-cell-disabled{
+    background-color: #dedede;
+}
+.restrictii-cell{
+    cursor: pointer;
+    background-color: #aeffc8;
+}
+.restrictii-cell-blocked{
+    cursor: pointer;
+    background-color: #fd4848;
+}
+.restrictii-max{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.select-title{
+    margin-right: 0.1em;
+    font-size: 0.96em;
+    /*position: relative;*/
+    /*top: -1.8em;*/
+    /*left: 3em;*/
+}
+/*@media (min-width: 992px) {*/
+/*    .select-title {*/
+/*        margin-right: 0.1em;*/
+/*        font-size: 0.96em;*/
+/*        position: relative;*/
+/*        !*top: -1.8em;*!*/
+/*        !*left: 3em;*!*/
+/*    }*/
+/*}*/
+
+select[readonly] + .select2-container {
+    pointer-events: none;
+    touch-action: none;
+}
+select[readonly] + .select2-container .select2-selection {
+    background-color: var(--cui-input-disabled-bg, #d8dbe0);
+    border-color: var(--cui-input-disabled-border-color, #b1b7c1);
+}
+.univtt-grupe-table tr td{
+    text-align: center;
+}
+.disc-prof{
+
+}
+.disc-prof div{
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+}
+.disc-prof div > span {
+    font-weight: 500;
+}
+.univtt-green{
+    background-color: #aeffc8 !important;
+}
+.univtt-red{
+    background-color: #ffc2c2 !important;
+}
+.univtt-orange{
+    background-color: #ffe8ae !important;
+}
+.univtt-orare{
+    table-layout: fixed;
+    width: 100%;
+}
+.univtt-orare thead tr th,
+.univtt-orare tbody tr th{
+    background-color: #CFCFCF;
+    color: #282828;
+    border: solid 1px #b0b0b0;
+    min-width: 10em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 7em;
+}
+
+.univtt-orare > tbody  tr  td {
+    border: solid 1px #b0b0b0;
+    /*min-width: 10em;*/
+    position: relative;
+    padding: 0.5em;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.94em;
+    height: 4em;
+    min-width: 9em;
+    width: 40%;
+}
+
+.col-width, .col-width-grup{
+    cursor: pointer;
+    top:3px;
+    right:2px;
+    position: absolute;
+    font-size: 1.1em;
+}
+
+.univtt-orare tbody tr td.orar-ora {
+    padding: 0.15em;
+    vertical-align: top;
+    line-height: 1.1em;
+    text-align: center;
+}
+.univtt-orare tbody tr td.day-label {
+    /*writing-mode: vertical-lr;*/
+    /*text-orientation: upright;*/
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+    min-width: 3em;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 1.16em;
+    /*border-right: solid 1px #909090;*/
+    border-bottom: solid 1px #707070;
+    color: #fff;
+    background-color: #ff9250 !important;
+}
+.univtt-orare > tbody tr:last-child td {
+    border-bottom: solid 1px #909090;
+}
+.univtt-orare thead tr th:first-child,
+.univtt-orare > tbody tr td:first-child {
+    /*min-width: 1em;*/
+    max-width: 3.3em !important;
+    width: 3.3em !important;
+}
+.univtt-orare thead tr th:nth-child(2),
+.univtt-orare > tbody tr td:nth-child(2) {
+    min-width: 3em;
+    max-width: 3em !important;
+    width: 3em !important;
+}
+/*.univtt-orare tbody:hover td[rowspan],*/
+.univtt-orare tr:hover {
+    background-color: #c4e5ff;
+}
+
+.univtt-orare thead tr th{
+    padding-top: 1em;
+}
+
+.add-ora{
+    cursor: pointer;
+    top:1px;
+    left:1px;
+    position: absolute;
+    font-size: 1.1em;
+}
+.del-ora{
+    cursor: pointer;
+    top:1px;
+    right:1px;
+    position: absolute;
+    font-size: 1.1em;
+}
+div.add-ora i, div.del-ora i,
+.univtt-orare thead tr th div.col-width i,
+.univtt-orare thead tr th div.col-width-grup i{
+    display: none;
+}
+
+.univtt-orare tbody tr td:hover div.add-ora i,
+.univtt-orare tbody tr td:hover div.del-ora i,
+.univtt-orare thead tr th:hover div.col-width i,
+.univtt-orare thead tr th:hover div.col-width-grup i{
+    display: block;
+}
+.univtt-orare tbody tr td.no-hover:hover div.add-ora i,
+.univtt-orare tbody tr td.no-hover:hover div.del-ora i,
+.univtt-orare thead tr th.no-hover:hover div.col-width i,
+.univtt-orare thead tr th.no-hover:hover div.col-width-grup i{
+    display: none;
+}
+.univtt-orare thead tr th div.col-width i.fa-maximize,
+.univtt-orare thead tr th div.col-width-grup i.fa-maximize{
+    color: #007e0b;
+}
+.univtt-orare thead tr th div.col-width i.fa-minimize,
+.univtt-orare thead tr th div.col-width-grup i.fa-minimize{
+    color: #d21729;
+}
+.univtt-orare td:hover div.add-ora i{
+    color: #004ba7;
+}
+.univtt-orare tbody tr td:hover div.del-ora i{
+    color: #d21729;
+    /*background-color: white;*/
+}
+
+td.orar-selected,
+.univtt-orare tr:hover td.orar-selected {
+    background-color: #ffd646 !important;
+}
+
+div.qtip-orar{
+    max-width: 35em !important;
+    /*width: auto;*/
+}
+div.qtip-orar div.qtip-content {
+    padding: 0.3em;
+    max-width: 35em !important;
+    /*width: auto;*/
+}
+
+
+
+.form-floating{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.qtip2-marker{
+    margin: 0 0.3em;
+    opacity: 0.3;
+    font-size: 1.4em;
+}
+.qtip2-marker:hover {
+    opacity: 0.8;
+}
+.spec-orar-dropdown{
+    z-index: 19000;
+    font-size: 1.05em;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,30%);
+}
+div.qtip-content div.modal-header,
+div.qtip-content div.modal-body,
+div.qtip-content div.modal-footer{
+    padding: 0.5em 0.3em 0.3em 0.3em;
+}
+div.qtip-content div.modal-body div.form-check{
+    padding: 0;
+}
+.edit-orar-title{
+    font-size: 1.0em;
+    font-weight: 500;
+}
+div.orar-cell{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.2em;
+    align-content: center;
+    overflow: hidden;
+}
+.disc{
+    width: 100%;
+    text-overflow: ellipsis ;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.98em;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+}
+.tip-ora{
+    font-size: 0.9em;
+    font-style: italic;
+    margin: auto;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+}
+.sala{
+    width: 100%;
+    text-overflow: ellipsis ;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.98em;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+}
+.prof{
+    width: 100%;
+    text-overflow: ellipsis ;
+    text-align: right;
+    font-size: 0.96em;
+    white-space: break-spaces;
+    overflow: hidden;
+}
+.fac{
+    width: 100%;
+    text-overflow: ellipsis ;
+    text-align: center;
+    font-size: 0.94em;
+    white-space: break-spaces;
+    overflow: hidden;
+}
+
+.color-C1 {
+    background-color: #c8ffda !important;
+}
+.color-S1 {
+    background-color: #ffefd5 !important;
+}
+.color-L1 {
+    background-color: #ffe8eb !important;
+}
+.color-P1 {
+    background-color: #e3eeff !important;
+}
+.color-C1,.color-C2,.color-C3 {
+    background: linear-gradient(0deg, rgb(130, 253, 171) 0%, rgb(172, 252, 198) 35%, rgba(200,255,218,1) 100%);
+}
+.color-S1,.color-S2,.color-S3 {
+    background: linear-gradient(0deg, rgba(254,218,161,1) 0%, rgba(252,228,190,1) 35%, rgba(255,239,213,1) 100%);
+}
+.color-L1,.color-L2,.color-L3 {
+    background: linear-gradient(0deg, rgb(252, 199, 206) 0%, rgb(253, 218, 222) 35%, rgba(255,232,235,1) 100%);
+}
+.color-P1,.color-P2,.color-P3 {
+    background: linear-gradient(0deg, rgba(160,196,251,1) 0%, rgba(203,222,251,1) 35%, rgba(227,238,255,1) 100%);
+}
+table.orar-raport{
+    width: 100%;
+    font-weight: 400;
+    border-collapse: collapse;
+}
+table.orar-raport tbody tr td{
+    padding:0.1em;
+    width:auto !important;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: solid 1px #b0b0b0;
+}
+table.orar-raport tbody tr td:first-child {
+    text-align: right;
+}
+table.orar-raport tbody tr td.rest {
+    background-color: #ff6377 !important;
+}
+table.orar-raport tbody tr td.full {
+    background-color: #11da48 !important;
+}
+
+
+
+
+/* public */
+.icon-tab{
+    margin-right: 0.5em;
+}
+.nav-tabs-boxed .nav .nav-item {
+    font-size:1.1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.mesaj-fara-orar{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+}
+
+form{
+    margin: 0;
+    padding: 0;
+}
+.univtt-orare-public thead tr th,
+.univtt-orare-public tbody tr th{
+    font-size:0.86em;
+}
+
+.univtt-orare-public > tbody  tr  td {
+    font-size: 0.84em;
+}
+.univtt-orare tbody tr td.hasRowSpan {
+    height: 8em;
+}
+.univtt-orare tbody tr td.orar-ora {
+    padding: 0.15em;
+    vertical-align: top;
+    line-height: 1.1em;
+    text-align: center;
+}
+.univtt-orare-public tbody tr td.day-label {
+    font-size: 0.90em;
+    border-bottom: solid 1px #707070;
+    color: #fff;
+    background-color: #2272bf !important;
+}
+.univtt-orare-public .col-width{
+    top:2px;
+    right:2px;
+}
+
+.univtt-orare-public .disc{
+    font-size: 0.94em;
+}
+.univtt-orare-public .tip-ora{
+    font-size: 0.9em;
+}
+.univtt-orare-public .sala{
+    font-size: 0.94em;
+}
+.univtt-orare-public .prof{
+    font-size: 0.9em;
+}
+
+.univtt-public-sali thead tr th:nth-child(2),
+.univtt-public-sali > tbody tr td:nth-child(2) {
+    height: 3.5em !important;
+    min-width: 9em !important;
+    max-width: unset !important;
+    width: unset !important;
+}
+.univtt-public-sali > tbody tr td {
+    height: 3.5em !important;
+}
+.univtt-public-sali thead tr th {
+    font-size: 0.90em;
+    border-bottom: solid 1px #707070;
+    color: #fff !important;
+    background-color: #2272bf !important;
+}
+.univtt-public-sali thead tr th:first-child {
+    font-size: 0.90em;
+    background-color: #CFCFCF !important;
+    color: #282828 !important;
+}
+/* end public */
