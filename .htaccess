@@ -1,0 +1,20 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_URI} !=/licenta/index.php
+
+RewriteCond %{REQUEST_URI} !.*\.png$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.jpg$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.css$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.gif$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.js$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.svg$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.ttf$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.woff2$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.ico$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.map$ [NC]
+RewriteCond %{REQUEST_URI} !.*\.pdf$ [NC]
+
+RewriteRule .* /licenta/index.php
